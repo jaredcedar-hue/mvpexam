@@ -96,14 +96,13 @@ if "major_category" in q.index:
     st.caption(f"{q.get('major_category','')} • {q.get('subcategory','')}")
 
 # Optional image
-img_path = str(q.get("image_path","") or "").strip()
+img_val = q.get("image_path", "")
+img_path = "" if pd.isna(img_val) else str(img_val).strip()
+
 if img_path:
-    # allow relative paths
     if os.path.exists(img_path):
         st.image(img_path, use_container_width=True)
-    else:
-        # If path doesn't exist in the repo, show a gentle note (won't crash)
-        st.caption(f"🖼️ Image not found at: {img_path}")
+    # optional: else do nothing (I recommend this for now)
 
 st.markdown(str(q["stem"]))
 
