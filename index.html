@@ -1003,6 +1003,7 @@ function app() {
       const val = e.target.value.toUpperCase().replace(/[^A-Z]/g, '');
       e.target.value = val;
       this.cwUserGrid[r][c] = val;
+      this.cwUserGrid[r] = [...this.cwUserGrid[r]]; // force Alpine.js reactivity on nested array
       this.cwChecked = false;
       if (val) this.cwAdvance(r, c);
     },
@@ -1041,8 +1042,23 @@ function app() {
 
     cwHighlight(r, c) {
       if (this.cwFocusR < 0) return false;
-      if (this.cwDir === 'across') return r === this.cwFocusR;
-      return c === this.cwFocusC;
+      if (this.cwDir === 'across') {
+        if (r !== this.cwFocusR) return false;
+        // Only highlight cells within the active word's column range
+        const clue = this.cwAcrossClues.find(cl =>
+          cl.r === this.cwFocusR && cl.c <= this.cwFocusC && this.cwFocusC < cl.c + cl.len
+        );
+        if (!clue) return false;
+        return c >= clue.c && c < clue.c + clue.len;
+      } else {
+        if (c !== this.cwFocusC) return false;
+        // Only highlight cells within the active word's row range
+        const clue = this.cwDownClues.find(cl =>
+          cl.c === this.cwFocusC && cl.r <= this.cwFocusR && this.cwFocusR < cl.r + cl.len
+        );
+        if (!clue) return false;
+        return r >= clue.r && r < clue.r + clue.len;
+      }
     },
 
     cwClickClue(clue, dir) {
@@ -1051,7 +1067,11 @@ function app() {
       this.focusCwCell(clue.r, clue.c);
     },
 
-    checkCrossword() { this.cwChecked = true; },
+    checkCrossword() {
+      // Force Alpine.js reactivity on cwUserGrid before evaluating class bindings
+      this.cwUserGrid = this.cwUserGrid.map(row => [...row]);
+      this.cwChecked = true;
+    },
 
     revealCrossword() {
       for (let r = 0; r < this.cwSize; r++) {
