@@ -437,10 +437,10 @@ input,select{font:inherit}
             </div>
           </div>
           <div style="overflow-x:auto" class="text-center">
-            <div class="cw-grid" :style="'grid-template-columns:repeat('+cwSize+',36px)'" x-ref="cwgrid">
+            <div class="cw-grid" :style="'grid-template-columns:repeat('+cwSize+',36px);grid-template-rows:repeat('+cwSize+',36px)'" x-ref="cwgrid">
               <template x-for="(row,r) in cwGrid" :key="r">
                 <template x-for="(cell,c) in row" :key="r+'-'+c">
-                  <div class="cw-cell" :class="{'black':cell==='#','highlight':cwHighlight(r,c),'correct-cell':cwChecked&&cwUserGrid[r]?.[c]&&cwUserGrid[r][c].toUpperCase()===cell,'incorrect-cell':cwChecked&&cwUserGrid[r]?.[c]&&cwUserGrid[r][c].toUpperCase()!==cell&&cell!=='#'&&cell!=='.'}">
+                  <div class="cw-cell" :style="'grid-row:'+(r+1)+';grid-column:'+(c+1)" :class="{'black':cell==='#','highlight':cwHighlight(r,c),'correct-cell':cwChecked&&cwUserGrid[r]?.[c]&&cwUserGrid[r][c].toUpperCase()===cell,'incorrect-cell':cwChecked&&cwUserGrid[r]?.[c]&&cwUserGrid[r][c].toUpperCase()!==cell&&cell!=='#'&&cell!=='.'}">
                     <span x-show="cwNumbers[r+','+c]" class="cw-num" x-text="cwNumbers[r+','+c]"></span>
                     <input x-show="cell!=='#'&&cell!=='.'" maxlength="1" :value="cwUserGrid[r]?.[c]||''"
                       @input="cwInput(r,c,$event)" @keydown="cwKeydown(r,c,$event)" @focus="cwFocusCell(r,c)"
