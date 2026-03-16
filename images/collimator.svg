@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<rect width="400" height="400" fill="#f8f9fa"/>
+<text x="200" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333" font-weight="bold">Collimator / Beam Restriction</text>
+<rect x="170" y="45" width="60" height="30" fill="#888" stroke="#333" stroke-width="2" rx="3"/>
+<text x="200" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fff">Tube</text>
+<rect x="120" y="85" width="160" height="50" fill="#ccc" stroke="#666" stroke-width="2" rx="3"/>
+<text x="200" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#333" font-weight="bold">Collimator</text>
+<rect x="140" y="95" width="30" height="30" fill="#555" stroke="#333" stroke-width="1.5" rx="2"/>
+<rect x="230" y="95" width="30" height="30" fill="#555" stroke="#333" stroke-width="1.5" rx="2"/>
+<text x="155" y="113" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#ddd">Shutter</text>
+<text x="245" y="113" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#ddd">Shutter</text>
+<path d="M170,135 L100,350 L300,350 L230,135 Z" fill="#fff9c4" stroke="#f39c12" stroke-width="1.5"/>
+<text x="200" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#f39c12">Useful beam</text>
+<line x1="140" y1="135" x2="60" y2="250" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5,5"/>
+<line x1="260" y1="135" x2="340" y2="250" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5,5"/>
+<text x="40" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#e74c3c">Blocked</text>
+<text x="345" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#e74c3c">Blocked</text>
+<rect x="70" y="330" width="260" height="30" fill="#fce4ec" stroke="#e91e63" stroke-width="1.5" rx="5"/>
+<text x="200" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#c2185b">Patient</text>
+<rect x="60" y="365" width="280" height="20" fill="#e3f2fd" stroke="#1976D2" stroke-width="1.5" rx="3"/>
+<text x="200" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1565C0">Image Receptor</text>
+</svg>

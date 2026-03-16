@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400">
+<rect width="700" height="400" fill="#ffffff"/>
+<text x="350" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#333" font-weight="bold">Body Habitus Types</text>
+<circle cx="100" cy="70" r="20" fill="#f5e6d0" stroke="#2980b9" stroke-width="2"/>
+<ellipse cx="100" cy="170" rx="50" ry="70" fill="#f0f4f8" stroke="#2980b9" stroke-width="2"/>
+<ellipse cx="90" cy="160" rx="18" ry="15" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+<text x="90" y="164" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#e74c3c">St</text>
+<line x1="85" y1="240" x2="80" y2="320" stroke="#2980b9" stroke-width="2"/>
+<line x1="115" y1="240" x2="120" y2="320" stroke="#2980b9" stroke-width="2"/>
+<text x="100" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#2980b9" font-weight="bold">Sthenic</text>
+<text x="100" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#888">50%</text>
+<circle cx="250" cy="70" r="20" fill="#f5e6d0" stroke="#27ae60" stroke-width="2"/>
+<ellipse cx="250" cy="177" rx="45" ry="77" fill="#f0f4f8" stroke="#27ae60" stroke-width="2"/>
+<ellipse cx="240" cy="180" rx="18" ry="15" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+<text x="240" y="184" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#e74c3c">St</text>
+<line x1="235" y1="255" x2="230" y2="335" stroke="#27ae60" stroke-width="2"/>
+<line x1="265" y1="255" x2="270" y2="335" stroke="#27ae60" stroke-width="2"/>
+<text x="250" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#27ae60" font-weight="bold">Hyposthenic</text>
+<text x="250" y="373" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#888">35%</text>
+<circle cx="400" cy="70" r="20" fill="#f5e6d0" stroke="#e67e22" stroke-width="2"/>
+<ellipse cx="400" cy="185" rx="35" ry="85" fill="#f0f4f8" stroke="#e67e22" stroke-width="2"/>
+<ellipse cx="390" cy="180" rx="18" ry="15" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+<text x="390" y="184" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#e74c3c">St</text>
+<line x1="385" y1="270" x2="380" y2="350" stroke="#e67e22" stroke-width="2"/>
+<line x1="415" y1="270" x2="420" y2="350" stroke="#e67e22" stroke-width="2"/>
+<text x="400" y="370" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#e67e22" font-weight="bold">Asthenic</text>
+<text x="400" y="388" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#888">10%</text>
+<circle cx="580" cy="70" r="20" fill="#f5e6d0" stroke="#8e44ad" stroke-width="2"/>
+<ellipse cx="580" cy="160" rx="65" ry="60" fill="#f0f4f8" stroke="#8e44ad" stroke-width="2"/>
+<ellipse cx="570" cy="120" rx="25" ry="15" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+<text x="570" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#e74c3c">St</text>
+<line x1="565" y1="220" x2="560" y2="300" stroke="#8e44ad" stroke-width="2"/>
+<line x1="595" y1="220" x2="600" y2="300" stroke="#8e44ad" stroke-width="2"/>
+<text x="580" y="320" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#8e44ad" font-weight="bold">Hypersthenic</text>
+<text x="580" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#888">5%</text>
+<text x="350" y="385" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888">St = Stomach position</text>
+</svg>

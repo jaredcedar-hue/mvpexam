@@ -89,6 +89,7 @@ input,select{font:inherit}
 /* ===== QUESTION CARD ===== */
 .q-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px}
 .q-num{font-weight:700;color:var(--accent);font-size:14px}
+.q-img-wrap{text-align:center;margin-bottom:16px}.q-img{max-width:100%;max-height:360px;border-radius:var(--radius);border:1px solid var(--border);object-fit:contain;background:#f8f8f8}
 .q-stem{font-size:17px;font-weight:500;line-height:1.7;margin-bottom:20px}
 .options{display:flex;flex-direction:column;gap:10px}
 .opt-label{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;transition:all var(--transition);font-size:15px;line-height:1.5}
@@ -262,6 +263,9 @@ input,select{font:inherit}
             <span class="text-xs text-muted" x-text="currentQ?.id"></span>
           </div>
 
+          <div x-show="currentQ?.img" class="q-img-wrap">
+            <img :src="currentQ?.img" :alt="currentQ?.imgAlt||'Question image'" class="q-img" loading="lazy">
+          </div>
           <div class="q-stem" x-text="currentQ?.stem"></div>
 
           <!-- Multi-select notice -->
@@ -385,6 +389,9 @@ input,select{font:inherit}
               <div class="q-header" style="justify-content:center">
                 <span class="badge badge-cat" x-text="studyCurrent?.cat"></span>
                 <span class="badge badge-diff" x-text="'Diff '+studyCurrent?.diff"></span>
+              </div>
+              <div x-show="studyCurrent?.img" class="q-img-wrap">
+                <img :src="studyCurrent?.img" :alt="studyCurrent?.imgAlt||'Question image'" class="q-img" loading="lazy">
               </div>
               <div class="q-stem" x-text="studyCurrent?.stem" style="margin-top:16px"></div>
               <p class="flip-hint">Click to reveal answer</p>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+<rect width="400" height="500" fill="#ffffff"/>
+<text x="200" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#333" font-weight="bold">Lateral Chest Anatomy</text>
+<path d="M 80 60 Q 60 200 80 380 Q 120 420 200 420 Q 280 420 320 380 Q 340 200 320 60 Q 200 40 80 60" fill="#f0f4f8" stroke="#555" stroke-width="2"/>
+<rect x="75" y="80" width="20" height="250" fill="#f5e6d0" stroke="#8b6914" stroke-width="2" rx="5"/>
+<text x="60" y="200" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#5a3e1b">Sternum</text>
+<rect x="290" y="70" width="25" height="270" fill="#f5e6d0" stroke="#8b6914" stroke-width="2" rx="5"/>
+<text x="340" y="200" text-anchor="start" font-family="Arial,sans-serif" font-size="10" fill="#5a3e1b">Thoracic</text>
+<text x="340" y="215" text-anchor="start" font-family="Arial,sans-serif" font-size="10" fill="#5a3e1b">Spine</text>
+<ellipse cx="170" cy="280" rx="70" ry="55" fill="#ffcccc" stroke="#cc3333" stroke-width="2"/>
+<text x="170" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#cc3333">Heart</text>
+<path d="M 80 370 Q 200 340 320 370" fill="none" stroke="#e67e22" stroke-width="2.5"/>
+<text x="200" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#e67e22">Diaphragm</text>
+<text x="180" y="150" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#3498db">Lung Field</text>
+<line x1="120" y1="150" x2="100" y2="150" stroke="#27ae60" stroke-width="2"/>
+<polygon points="100,150 109.21060994002885,146.1058165769135 109.21060994002886,153.8941834230865" fill="#27ae60"/>
+<text x="135" y="148" text-anchor="start" font-family="Arial,sans-serif" font-size="9" fill="#27ae60">Retrosternal</text>
+<text x="135" y="161" text-anchor="start" font-family="Arial,sans-serif" font-size="9" fill="#27ae60">Space</text>
+<line x1="260" y1="300" x2="280" y2="300" stroke="#9b59b6" stroke-width="2"/>
+<polygon points="280,300 270.78939005997114,303.89418342308653 270.78939005997114,296.10581657691347" fill="#9b59b6"/>
+<text x="245" y="298" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#9b59b6">Retrocardiac</text>
+<text x="245" y="311" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#9b59b6">Space</text>
+<text x="200" y="470" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aaa">Anterior (left) — Posterior (right)</text>
+</svg>

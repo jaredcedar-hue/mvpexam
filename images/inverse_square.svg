@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+<rect width="500" height="350" fill="#f8f9fa"/>
+<text x="250" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333" font-weight="bold">Inverse Square Law</text>
+<circle cx="50" cy="175" r="15" fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+<text x="50" y="179" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff" font-weight="bold">X</text>
+<text x="50" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#666">Source</text>
+<line x1="65" y1="160" x2="460" y2="80" stroke="#f39c12" stroke-width="1"/>
+<line x1="65" y1="190" x2="460" y2="270" stroke="#f39c12" stroke-width="1"/>
+<line x1="180" y1="80" x2="180" y2="270" stroke="#2196F3" stroke-width="1" stroke-dasharray="5,5"/>
+<rect x="160" y="140" width="40" height="70" fill="#bbdefb" stroke="#1976D2" stroke-width="1.5" rx="0"/>
+<text x="180" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#1565C0" font-weight="bold">A₁</text>
+<text x="180" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#2196F3" font-weight="bold">d</text>
+<line x1="340" y1="80" x2="340" y2="270" stroke="#e91e63" stroke-width="1" stroke-dasharray="5,5"/>
+<rect x="300" y="110" width="80" height="130" fill="#fce4ec" stroke="#c2185b" stroke-width="1.5" rx="0"/>
+<text x="340" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#c2185b" font-weight="bold">A₂</text>
+<text x="340" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#e91e63" font-weight="bold">2d</text>
+<text x="250" y="330" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#444">I₁/I₂ = (d₂)²/(d₁)²   →   If distance doubles, intensity = 1/4</text>
+</svg>

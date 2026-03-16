@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="400" height="450">
+<rect width="400" height="450" fill="#f0f4ff"/>
+<text x="200" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333" font-weight="bold">PA Chest: Positioning Landmarks</text>
+<path d="M120,60 Q200,40 280,60 L290,350 Q200,370 110,350 Z" fill="#f5ebe0" stroke="#8B7355" stroke-width="2"/>
+<path d="M120,60 Q80,60 60,90" fill="none" stroke="#8B7355" stroke-width="2"/>
+<path d="M280,60 Q320,60 340,90" fill="none" stroke="#8B7355" stroke-width="2"/>
+<ellipse cx="160" cy="180" rx="50" ry="90" fill="#e3f2fd" stroke="#90CAF9" stroke-width="1"/>
+<ellipse cx="240" cy="180" rx="50" ry="90" fill="#e3f2fd" stroke="#90CAF9" stroke-width="1"/>
+<ellipse cx="190" cy="210" rx="40" ry="50" fill="#fce4ec" stroke="#ef9a9a" stroke-width="1"/>
+<line x1="200" y1="50" x2="200" y2="350" stroke="#999" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="110" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#1976D2">CP angle</text>
+<text x="290" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#1976D2">CP angle</text>
+<path d="M130,80 Q200,70 270,80" fill="none" stroke="#8B7355" stroke-width="2.5"/>
+<circle cx="200" cy="270" r="4" fill="#e74c3c" stroke="#e74c3c" stroke-width="1"/>
+<text x="220" y="274" text-anchor="start" font-family="Arial,sans-serif" font-size="9" fill="#e74c3c">T7 (CR level)</text>
+<text x="160" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1976D2">R Lung</text>
+<text x="240" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1976D2">L Lung</text>
+<text x="190" y="215" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#c2185b">Heart</text>
+<line x1="50" y1="280" x2="108" y2="275" stroke="#e74c3c" stroke-width="2.5"/>
+<polygon points="108,275 99.15789034982991,279.6708775336514 98.48896043333264,271.9112905022829" fill="#e74c3c"/>
+<text x="45" y="275" text-anchor="end" font-family="Arial,sans-serif" font-size="18" fill="#e74c3c" font-weight="bold">?</text>
+<text x="200" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#444">The CR for a PA chest enters at what level?</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 400" width="450" height="400">
+<rect width="450" height="400" fill="#f0f4ff"/>
+<text x="225" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333" font-weight="bold">AP Shoulder (Diagram)</text>
+<path d="M100,100 Q180,80 280,110" fill="none" stroke="#8B7355" stroke-width="4"/>
+<text x="180" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2c5282">Clavicle</text>
+<path d="M260,100 L280,110 L300,250 L260,300 L220,250 Z" fill="#f0e6d6" stroke="#8B7355" stroke-width="2"/>
+<path d="M260,100 Q290,90 300,105" fill="#f5ebe0" stroke="#8B7355" stroke-width="3"/>
+<ellipse cx="275" cy="155" rx="15" ry="25" fill="#ddd" stroke="#8B7355" stroke-width="1.5"/>
+<circle cx="275" cy="155" r="35" fill="#f5ebe0" stroke="#8B7355" stroke-width="2"/>
+<rect x="260" y="190" width="30" height="180" fill="#f5ebe0" stroke="#8B7355" stroke-width="2" rx="5"/>
+<ellipse cx="300" cy="145" rx="12" ry="18" fill="none" stroke="#8B7355" stroke-width="1.5"/>
+<text x="280" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#2c5282">AC joint</text>
+<circle cx="280" cy="100" r="5" fill="none" stroke="#2c5282" stroke-width="1"/>
+<line x1="380" y1="145" x2="315" y2="145" stroke="#e74c3c" stroke-width="2.5"/>
+<polygon points="315,145 324.21060994002886,141.1058165769135 324.21060994002886,148.8941834230865" fill="#e74c3c"/>
+<text x="385" y="149" text-anchor="start" font-family="Arial,sans-serif" font-size="18" fill="#e74c3c" font-weight="bold">?</text>
+<text x="320" y="260" text-anchor="start" font-family="Arial,sans-serif" font-size="10" fill="#2c5282">Humerus</text>
+<text x="230" y="280" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#2c5282">Scapula</text>
+</svg>
