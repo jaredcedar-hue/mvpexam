@@ -237,6 +237,11 @@ input,select{font:inherit}
             </select>
           </div>
 
+          <label class="flex items-center gap-2 mt-2 mb-2" style="font-size:14px" x-show="mode==='exam'">
+            <input type="checkbox" x-model="setupImageOnly"> Image-based questions only
+            <span class="text-xs text-muted" x-show="setupImageOnly" x-text="'('+allQuestions.filter(q=>q.img).length+' available)'"></span>
+          </label>
+
           <button class="btn btn-primary w-full mt-4" @click="startExam()" :disabled="filteredCount<1">
             <span x-text="mode==='timed'?'Start Timed Exam (220 Qs, 3.5 hrs)':'Start Exam'"></span>
           </button>
@@ -364,8 +369,12 @@ input,select{font:inherit}
               <option value="3">3 — Hard</option><option value="4">4 — Expert</option>
             </select>
           </div>
-          <label class="flex items-center gap-2 mt-2 mb-4" style="font-size:14px">
+          <label class="flex items-center gap-2 mt-2 mb-2" style="font-size:14px">
             <input type="checkbox" x-model="studyShuffle"> Shuffle cards
+          </label>
+          <label class="flex items-center gap-2 mb-4" style="font-size:14px">
+            <input type="checkbox" x-model="setupImageOnly"> Image-based questions only
+            <span class="text-xs text-muted" x-show="setupImageOnly" x-text="'('+allQuestions.filter(q=>q.img).length+' available)'"></span>
           </label>
           <button class="btn btn-primary w-full" @click="startStudy()" :disabled="filteredCount<1">
             Start Studying (<span x-text="filteredCount"></span> cards)
@@ -644,6 +653,7 @@ function app() {
     // Setup
     setupCat: '',
     setupDiff: '',
+    setupImageOnly: false,
     setupCount: 25,
 
     // Exam
@@ -743,6 +753,7 @@ function app() {
       let qs = this.allQuestions;
       if (this.setupCat) qs = qs.filter(q => q.cat === this.setupCat);
       if (this.setupDiff) qs = qs.filter(q => q.diff === parseInt(this.setupDiff));
+      if (this.setupImageOnly) qs = qs.filter(q => !!q.img);
       return qs;
     },
 
