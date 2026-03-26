@@ -17018,5 +17018,730 @@
       "SID",
       "positioning"
     ]
+  },
+  {
+    "id": "IMG-R01",
+    "cat": "Procedures",
+    "sub": "Abdomen and GI Procedures",
+    "diff": 1,
+    "type": "single",
+    "stem": "This radiograph demonstrates which projection?",
+    "img": "images/abdomen.jpg",
+    "imgAlt": "AP supine abdomen radiograph",
+    "opts": {
+      "A": "PA upright abdomen",
+      "B": "AP supine abdomen (KUB)",
+      "C": "Left lateral decubitus abdomen",
+      "D": "AP upright abdomen"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "This is an AP supine abdomen (KUB \u2014 kidneys, ureters, bladder). The patient is supine as indicated by the body habitus presentation and the R marker placement. There is no visible air-fluid level line that would indicate an upright or decubitus position.",
+    "tags": [
+      "abdomen",
+      "KUB",
+      "projection identification"
+    ]
+  },
+  {
+    "id": "IMG-R02",
+    "cat": "Procedures",
+    "sub": "Abdomen and GI Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "On this AP abdomen, what anatomical structures should be included within the collimated field?",
+    "img": "images/abdomen.jpg",
+    "imgAlt": "AP supine abdomen radiograph",
+    "opts": {
+      "A": "Diaphragm through the pubic symphysis",
+      "B": "Xiphoid process through the iliac crests only",
+      "C": "Lower ribs through the femoral heads",
+      "D": "T10 through the ischial tuberosities"
+    },
+    "ans": [
+      "A"
+    ],
+    "exp": "A complete AP abdomen (KUB) must include from the diaphragm superiorly to the pubic symphysis inferiorly. This ensures visualization of the kidneys, ureters, and bladder along with any free air under the diaphragm.",
+    "tags": [
+      "abdomen",
+      "collimation",
+      "anatomy included"
+    ]
+  },
+  {
+    "id": "IMG-R03",
+    "cat": "Image Production",
+    "sub": "Image Quality Assessment",
+    "diff": 2,
+    "type": "single",
+    "stem": "On this abdomen radiograph, the 'R' marker is visible in the lower left corner. What does this indicate about patient positioning?",
+    "img": "images/abdomen.jpg",
+    "imgAlt": "AP supine abdomen with R marker visible",
+    "opts": {
+      "A": "The patient is prone",
+      "B": "The image is displayed correctly with the patient's right on the viewer's left",
+      "C": "The marker was placed on the wrong side",
+      "D": "The patient is in a left lateral decubitus position"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "By convention, AP/PA radiographs are displayed as if facing the patient \u2014 the patient's right appears on the viewer's left. The R marker confirms correct orientation and should always be placed on the patient's right side.",
+    "tags": [
+      "markers",
+      "image orientation",
+      "patient positioning"
+    ]
+  },
+  {
+    "id": "IMG-R04",
+    "cat": "Patient Care",
+    "sub": "Patient Interactions and Management",
+    "diff": 2,
+    "type": "single",
+    "stem": "This abdomen radiograph demonstrates a radiopaque line coursing through the abdomen. What is this device?",
+    "img": "images/buckyng.jpg",
+    "imgAlt": "AP supine abdomen showing nasogastric tube",
+    "opts": {
+      "A": "Central venous catheter",
+      "B": "Nasogastric (NG) tube",
+      "C": "Ureteral stent",
+      "D": "Peripherally inserted central catheter (PICC)"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "The radiopaque line entering from the superior aspect and coursing through the esophagus into the stomach region is a nasogastric (NG) tube. Radiographs are commonly obtained to confirm proper NG tube placement before use.",
+    "tags": [
+      "NG tube",
+      "medical devices",
+      "abdomen"
+    ]
+  },
+  {
+    "id": "IMG-R05",
+    "cat": "Patient Care",
+    "sub": "Patient Interactions and Management",
+    "diff": 2,
+    "type": "single",
+    "stem": "When positioning this patient for an abdominal radiograph, the technologist must take care not to displace the tube visible in the image. What is the correct approach?",
+    "img": "images/buckyng.jpg",
+    "imgAlt": "AP supine abdomen with nasogastric tube",
+    "opts": {
+      "A": "Remove the tube before imaging",
+      "B": "Clamp the tube and tape it out of the field of view",
+      "C": "Keep the tube in place, handle gently, and include it in the image",
+      "D": "Push the tube to the side for a clearer image"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "Medical tubes and lines should never be removed or repositioned by the technologist. The tube should remain in place and be handled gently during positioning. The radiograph is often being obtained specifically to verify tube placement.",
+    "tags": [
+      "tube management",
+      "patient care",
+      "NG tube"
+    ]
+  },
+  {
+    "id": "IMG-R06",
+    "cat": "Image Production",
+    "sub": "Image Quality Assessment",
+    "diff": 2,
+    "type": "single",
+    "stem": "This PA chest radiograph demonstrates an image quality problem. What is the most likely issue?",
+    "img": "images/chest_inspiration_low.jpg",
+    "imgAlt": "PA chest radiograph with inadequate inspiration",
+    "opts": {
+      "A": "Patient rotation",
+      "B": "Inadequate inspiration",
+      "C": "Motion artifact",
+      "D": "Overexposure"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "This chest shows inadequate inspiration \u2014 fewer than 10 posterior ribs are visible above the diaphragm, the heart appears falsely enlarged, and the lung bases are crowded. A good inspiration shows at least 10 posterior ribs or 8 anterior ribs above the diaphragm.",
+    "tags": [
+      "chest quality",
+      "inspiration",
+      "image evaluation"
+    ]
+  },
+  {
+    "id": "IMG-R07",
+    "cat": "Image Production",
+    "sub": "Image Quality Assessment",
+    "diff": 2,
+    "type": "single",
+    "stem": "On this chest radiograph, the heart appears enlarged. Before diagnosing cardiomegaly, the technologist should consider which technical factor?",
+    "img": "images/chest_inspiration_low.jpg",
+    "imgAlt": "PA chest with apparent cardiomegaly due to poor inspiration",
+    "opts": {
+      "A": "The kVp was too high",
+      "B": "The SID was incorrect",
+      "C": "The patient did not take a deep enough breath",
+      "D": "The grid was misaligned"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "Inadequate inspiration is a common cause of apparent cardiomegaly on chest radiographs. When the diaphragm is not fully depressed, the heart is pushed up and appears wider. The technologist should repeat the exam with proper breathing instructions before cardiomegaly is diagnosed.",
+    "tags": [
+      "cardiomegaly",
+      "inspiration",
+      "chest evaluation"
+    ]
+  },
+  {
+    "id": "IMG-R08",
+    "cat": "Procedures",
+    "sub": "Chest Procedures",
+    "diff": 1,
+    "type": "single",
+    "stem": "How many posterior ribs should be visible above the diaphragm on a properly inspired PA chest radiograph?",
+    "img": "images/chest_inspiration_low.jpg",
+    "imgAlt": "PA chest with poor inspiration",
+    "opts": {
+      "A": "5-6",
+      "B": "7-8",
+      "C": "10 or more",
+      "D": "12 or more"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "A minimum of 10 posterior ribs (or 8 anterior ribs) should be visible above the diaphragm on a properly inspired PA chest. Fewer ribs suggest inadequate inspiration, which compromises image quality and diagnostic value.",
+    "tags": [
+      "chest",
+      "inspiration criteria",
+      "rib counting"
+    ]
+  },
+  {
+    "id": "IMG-R09",
+    "cat": "Image Production",
+    "sub": "Image Quality Assessment",
+    "diff": 2,
+    "type": "single",
+    "stem": "Evaluate this PA chest radiograph. Which of the following criteria confirms this is a properly positioned PA projection rather than AP?",
+    "img": "images/cxr_plus.jpg",
+    "imgAlt": "Well-positioned PA chest radiograph",
+    "opts": {
+      "A": "The scapulae are projected within the lung fields",
+      "B": "The scapulae are rotated laterally outside the lung fields",
+      "C": "The clavicles are projected above the apices",
+      "D": "The ribs appear horizontal"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "On a properly positioned PA chest, the scapulae are rotated laterally outside the lung fields. This is achieved by placing the backs of the patient's hands on their hips and rolling the shoulders forward. On an AP projection, the scapulae typically overlap the lung fields.",
+    "tags": [
+      "PA chest",
+      "positioning criteria",
+      "scapulae"
+    ]
+  },
+  {
+    "id": "IMG-R10",
+    "cat": "Procedures",
+    "sub": "Chest Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "On this PA chest, how can you evaluate whether the patient is rotated?",
+    "img": "images/cxr_plus.jpg",
+    "imgAlt": "PA chest radiograph",
+    "opts": {
+      "A": "Compare the length of the clavicles",
+      "B": "Check if the medial ends of the clavicles are equidistant from the spinous processes",
+      "C": "Measure the width of the ribs on each side",
+      "D": "Look at the position of the heart apex"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "Rotation is assessed by comparing the distance from each medial clavicle end to the midline spinous processes. If equidistant, the patient is not rotated. Unequal distances indicate the patient was turned to one side.",
+    "tags": [
+      "rotation assessment",
+      "chest quality",
+      "clavicles"
+    ]
+  },
+  {
+    "id": "IMG-R11",
+    "cat": "Procedures",
+    "sub": "Chest Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "These two chest radiographs were taken of the same patient. The left image is PA and the right is AP. What is the most obvious difference?",
+    "img": "images/cxrvsapt.jpg",
+    "imgAlt": "Side-by-side PA chest (left) vs AP chest (right) of same patient",
+    "opts": {
+      "A": "The AP image shows better lung detail",
+      "B": "The heart appears significantly larger on the AP projection",
+      "C": "The PA image shows more ribs",
+      "D": "The AP image has less scatter radiation"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "On an AP projection, the heart is farther from the image receptor and closer to the x-ray source, causing greater magnification. The heart can appear up to 15-20% larger on AP compared to PA. This is why PA is the standard for chest radiography \u2014 it minimizes cardiac magnification.",
+    "tags": [
+      "PA vs AP",
+      "cardiac magnification",
+      "chest"
+    ]
+  },
+  {
+    "id": "IMG-R12",
+    "cat": "Image Production",
+    "sub": "Technical Factors",
+    "diff": 2,
+    "type": "single",
+    "stem": "Comparing these PA (left) and AP (right) chest images of the same patient, what geometric principle explains the difference in heart size?",
+    "img": "images/cxrvsapt.jpg",
+    "imgAlt": "PA vs AP chest comparison showing heart size difference",
+    "opts": {
+      "A": "Distortion from tube angulation",
+      "B": "Magnification due to increased object-to-image receptor distance (OID)",
+      "C": "Shape distortion from off-centering",
+      "D": "Penumbra from a large focal spot"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "On the AP projection, the heart has a greater OID (it is farther from the image receptor). Per the magnification principle, increased OID increases magnification. On PA, the heart is closer to the IR, minimizing magnification and providing a more accurate size representation.",
+    "tags": [
+      "OID",
+      "magnification",
+      "geometric factors"
+    ]
+  },
+  {
+    "id": "IMG-R13",
+    "cat": "Procedures",
+    "sub": "Chest Procedures",
+    "diff": 1,
+    "type": "single",
+    "stem": "Why is a PA projection preferred over AP for routine chest radiography?",
+    "img": "images/cxrvsapt.jpg",
+    "imgAlt": "PA vs AP chest comparison",
+    "opts": {
+      "A": "PA uses less radiation",
+      "B": "PA minimizes magnification of the heart and mediastinal structures",
+      "C": "PA provides better visualization of the posterior ribs",
+      "D": "PA requires a lower kVp"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "PA is preferred because the heart and great vessels are anterior structures. In PA positioning, these structures are closest to the image receptor, minimizing their magnification and providing the most accurate representation of cardiac size.",
+    "tags": [
+      "PA chest",
+      "cardiac magnification",
+      "routine positioning"
+    ]
+  },
+  {
+    "id": "IMG-R14",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 1,
+    "type": "single",
+    "stem": "This radiograph demonstrates which projection of the elbow?",
+    "img": "images/elbow ap.jpg",
+    "imgAlt": "AP projection of the right elbow",
+    "opts": {
+      "A": "Lateral elbow",
+      "B": "AP elbow",
+      "C": "AP oblique with medial rotation",
+      "D": "Axial elbow"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "This is an AP elbow \u2014 the joint space between the humerus and radius/ulna is open, and both the medial and lateral epicondyles are seen in profile. The elbow is fully extended with the hand supinated.",
+    "tags": [
+      "elbow",
+      "AP projection",
+      "identification"
+    ]
+  },
+  {
+    "id": "IMG-R15",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "On this AP elbow, what positioning criteria indicates the hand was properly supinated?",
+    "img": "images/elbow ap.jpg",
+    "imgAlt": "AP elbow radiograph",
+    "opts": {
+      "A": "The olecranon is seen in profile",
+      "B": "The radial head is superimposed over the ulna",
+      "C": "The radial tuberosity faces medially and the radius and ulna are not superimposed",
+      "D": "The coronoid process is well-visualized"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "On a true AP elbow with proper supination, the radius and ulna should not be superimposed, and the radial tuberosity should face medially. If the hand is pronated, the radius crosses over the ulna, obscuring anatomy.",
+    "tags": [
+      "elbow positioning",
+      "supination",
+      "AP criteria"
+    ]
+  },
+  {
+    "id": "IMG-R16",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "If the patient cannot fully extend the elbow for this AP projection, what modification should the technologist make?",
+    "img": "images/elbow ap.jpg",
+    "imgAlt": "AP elbow in full extension",
+    "opts": {
+      "A": "Force the elbow straight for the image",
+      "B": "Obtain two separate AP projections \u2014 one for the distal humerus and one for the proximal forearm",
+      "C": "Only take a lateral projection instead",
+      "D": "Increase the kVp to compensate"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "When a patient cannot fully extend the elbow, two separate AP projections should be obtained: one with the CR perpendicular to the humerus (to demonstrate the distal humerus) and one with the CR perpendicular to the forearm (to demonstrate the proximal radius/ulna).",
+    "tags": [
+      "elbow",
+      "trauma modification",
+      "split AP"
+    ]
+  },
+  {
+    "id": "IMG-R17",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "This hand radiograph demonstrates which special projection?",
+    "img": "images/fanlateral.jpg",
+    "imgAlt": "Fan lateral (ball-catcher/Norgaard) view of the hand",
+    "opts": {
+      "A": "PA hand",
+      "B": "Lateral hand in extension",
+      "C": "Fan lateral (Norgaard/ball-catcher method)",
+      "D": "AP oblique hand"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "This is a fan lateral (ball-catcher or Norgaard method). The fingers are spread apart ('fanned') in a semi-lateral position, demonstrating the phalanges individually without superimposition. This view is useful for evaluating early rheumatoid arthritis erosions.",
+    "tags": [
+      "fan lateral",
+      "Norgaard",
+      "hand special view"
+    ]
+  },
+  {
+    "id": "IMG-R18",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 3,
+    "type": "single",
+    "stem": "This fan lateral view of the hand is primarily used to evaluate which pathology?",
+    "img": "images/fanlateral.jpg",
+    "imgAlt": "Fan lateral hand radiograph",
+    "opts": {
+      "A": "Scaphoid fracture",
+      "B": "Boxer's fracture of the 5th metacarpal",
+      "C": "Early erosive changes of rheumatoid arthritis",
+      "D": "Bennett fracture of the thumb"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "The Norgaard (ball-catcher) method is specifically designed to demonstrate early erosive changes of rheumatoid arthritis at the metacarpophalangeal joints. The bilateral 45\u00b0 oblique position opens these joint spaces for better visualization of subtle erosions.",
+    "tags": [
+      "Norgaard method",
+      "rheumatoid arthritis",
+      "hand"
+    ]
+  },
+  {
+    "id": "IMG-R19",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 3,
+    "type": "single",
+    "stem": "These two wrist images compare a normal wrist (left) with an abnormal one (right). What does obliteration of the scaphoid fat pad suggest?",
+    "img": "images/fatpad.jpg",
+    "imgAlt": "Comparison of normal scaphoid fat pad vs obliterated fat pad with fracture",
+    "opts": {
+      "A": "Distal radius fracture",
+      "B": "Occult scaphoid fracture",
+      "C": "Carpal tunnel syndrome",
+      "D": "Ligament tear without fracture"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "The scaphoid fat stripe (navicular fat stripe) is a radiolucent line adjacent to the scaphoid bone. When this fat pad is obliterated or displaced, it is a soft-tissue sign suggesting an occult scaphoid fracture \u2014 even when no fracture line is directly visible on the radiograph.",
+    "tags": [
+      "scaphoid fat pad",
+      "occult fracture",
+      "soft tissue signs"
+    ]
+  },
+  {
+    "id": "IMG-R20",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "When a patient presents after a fall on an outstretched hand (FOOSH) and initial radiographs appear normal, what additional view should be obtained to evaluate for scaphoid fracture?",
+    "img": "images/fatpad.jpg",
+    "imgAlt": "Normal vs abnormal scaphoid fat pad on wrist radiographs",
+    "opts": {
+      "A": "PA with radial deviation",
+      "B": "PA with ulnar deviation (scaphoid view)",
+      "C": "Carpal tunnel projection",
+      "D": "PA with clenched fist"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "A PA wrist with ulnar deviation elongates the scaphoid and opens it to full profile, making subtle fractures more visible. This is the standard additional view for suspected scaphoid fractures. If negative but clinical suspicion remains high, follow-up imaging in 10-14 days or MRI is recommended.",
+    "tags": [
+      "scaphoid fracture",
+      "ulnar deviation",
+      "FOOSH"
+    ]
+  },
+  {
+    "id": "IMG-R21",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "This foot radiograph has an arrow indicating a fracture. What is the name for a transverse fracture at the base of the 5th metatarsal?",
+    "img": "images/jonesfx.jpg",
+    "imgAlt": "AP foot radiograph with arrow pointing to base of 5th metatarsal fracture",
+    "opts": {
+      "A": "Lisfranc fracture",
+      "B": "March fracture",
+      "C": "Jones fracture",
+      "D": "Maisonneuve fracture"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "A Jones fracture is a transverse fracture at the base of the 5th metatarsal (specifically at the meta-diaphyseal junction). It is a common injury from an inversion mechanism. It should be distinguished from a more proximal avulsion fracture of the tuberosity (pseudo-Jones).",
+    "tags": [
+      "Jones fracture",
+      "5th metatarsal",
+      "foot fracture"
+    ]
+  },
+  {
+    "id": "IMG-R22",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "This radiograph demonstrates which projection of the foot?",
+    "img": "images/jonesfx.jpg",
+    "imgAlt": "Foot radiograph showing metatarsals and phalanges",
+    "opts": {
+      "A": "AP foot (dorsoplantar)",
+      "B": "Lateral foot",
+      "C": "AP oblique foot (medial rotation)",
+      "D": "Calcaneal axial"
+    },
+    "ans": [
+      "A"
+    ],
+    "exp": "This is an AP (dorsoplantar) projection of the foot. The central ray enters the dorsal surface. The metatarsals are seen in their full length with the bases slightly overlapping, and the phalanges are well-demonstrated.",
+    "tags": [
+      "foot projection",
+      "AP foot",
+      "identification"
+    ]
+  },
+  {
+    "id": "IMG-R23",
+    "cat": "Procedures",
+    "sub": "Chest Procedures",
+    "diff": 3,
+    "type": "single",
+    "stem": "This PA chest radiograph has a boxed area in the left lung field highlighting a finding. What does this rounded opacity most likely represent?",
+    "img": "images/lung nodule.jpg",
+    "imgAlt": "PA chest with solitary pulmonary nodule boxed in left lung",
+    "opts": {
+      "A": "Pleural effusion",
+      "B": "Pneumothorax",
+      "C": "Solitary pulmonary nodule",
+      "D": "Atelectasis"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "The boxed area highlights a solitary pulmonary nodule \u2014 a well-defined rounded opacity within the lung parenchyma. Nodules are typically less than 3 cm and can be benign (granuloma) or malignant. Further evaluation with CT is usually recommended.",
+    "tags": [
+      "pulmonary nodule",
+      "chest finding",
+      "lung pathology"
+    ]
+  },
+  {
+    "id": "IMG-R24",
+    "cat": "Procedures",
+    "sub": "Chest Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "When a subtle finding like this lung nodule is identified, what complementary view should the technologist obtain?",
+    "img": "images/lung nodule.jpg",
+    "imgAlt": "PA chest with solitary pulmonary nodule",
+    "opts": {
+      "A": "AP lordotic view",
+      "B": "Lateral chest",
+      "C": "Bilateral decubitus views",
+      "D": "Expiration PA chest"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "A lateral chest radiograph is the standard complementary view to a PA chest. It helps localize lesions to specific lobes by showing their anterior-posterior position. A nodule visible on PA can be localized to the correct lobe on the lateral view.",
+    "tags": [
+      "lateral chest",
+      "lesion localization",
+      "complementary views"
+    ]
+  },
+  {
+    "id": "IMG-R25",
+    "cat": "Image Production",
+    "sub": "Image Quality Assessment",
+    "diff": 2,
+    "type": "single",
+    "stem": "Evaluate this hand radiograph. What positioning error is present?",
+    "img": "images/oblique_hand.jpg",
+    "imgAlt": "Oblique hand radiograph with positioning issues",
+    "opts": {
+      "A": "The hand is over-rotated beyond 45 degrees",
+      "B": "The fingers are not separated and are superimposed",
+      "C": "The wrist is not included in the collimated field",
+      "D": "The hand is in PA position instead of oblique"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "The fingers are overlapping/superimposed, which obscures the interphalangeal joints and makes the image diagnostically inadequate. On a proper oblique hand, the fingers should be separated and slightly flexed to prevent superimposition.",
+    "tags": [
+      "hand positioning",
+      "oblique",
+      "image critique"
+    ]
+  },
+  {
+    "id": "IMG-R26",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 1,
+    "type": "single",
+    "stem": "For an oblique hand radiograph, the hand should be rotated to approximately what angle from the image receptor?",
+    "img": "images/oblique_hand.jpg",
+    "imgAlt": "Oblique hand radiograph",
+    "opts": {
+      "A": "15 degrees",
+      "B": "45 degrees",
+      "C": "60 degrees",
+      "D": "90 degrees (lateral)"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "The hand is rotated 45\u00b0 from the prone position for an oblique projection. This separates the metacarpals and opens the interphalangeal joints. A sponge or step wedge can support the fingers at the correct angle.",
+    "tags": [
+      "hand oblique",
+      "45 degrees",
+      "positioning"
+    ]
+  },
+  {
+    "id": "IMG-R27",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "This shoulder radiograph demonstrates which special projection?",
+    "img": "images/yview.jpg",
+    "imgAlt": "Scapular Y-view lateral projection of the shoulder",
+    "opts": {
+      "A": "AP internal rotation shoulder",
+      "B": "Transthoracic lateral (Lawrence method)",
+      "C": "Scapular Y-view (lateral scapula)",
+      "D": "West Point axillary view"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "This is a scapular Y-view, where the scapular body, acromion, and coracoid process form a Y-shape. The humeral head should be centered at the intersection of the Y in a normal (non-dislocated) shoulder. This view is obtained by rotating the patient into an anterior oblique position.",
+    "tags": [
+      "scapular Y-view",
+      "shoulder",
+      "projection identification"
+    ]
+  },
+  {
+    "id": "IMG-R28",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 3,
+    "type": "single",
+    "stem": "On this scapular Y-view, where should the humeral head be positioned relative to the 'Y' if the shoulder is NOT dislocated?",
+    "img": "images/yview.jpg",
+    "imgAlt": "Scapular Y-view of shoulder",
+    "opts": {
+      "A": "Anterior to the Y intersection",
+      "B": "Posterior to the Y intersection",
+      "C": "Superimposed over the center of the Y intersection (glenoid fossa)",
+      "D": "Inferior to the Y intersection"
+    },
+    "ans": [
+      "C"
+    ],
+    "exp": "On a normal scapular Y-view, the humeral head should sit directly over the center of the Y, which represents the glenoid fossa. If the humeral head is anterior to the Y, it indicates an anterior dislocation. If posterior, it indicates a posterior dislocation.",
+    "tags": [
+      "shoulder dislocation",
+      "scapular Y-view",
+      "evaluation"
+    ]
+  },
+  {
+    "id": "IMG-R29",
+    "cat": "Procedures",
+    "sub": "Extremity Procedures",
+    "diff": 2,
+    "type": "single",
+    "stem": "The scapular Y-view is particularly valuable in the trauma setting because:",
+    "img": "images/yview.jpg",
+    "imgAlt": "Scapular Y-view lateral shoulder",
+    "opts": {
+      "A": "It requires the patient to abduct the arm",
+      "B": "It can be performed without moving the injured arm",
+      "C": "It demonstrates the acromioclavicular joint best",
+      "D": "It requires less radiation than other shoulder views"
+    },
+    "ans": [
+      "B"
+    ],
+    "exp": "The scapular Y-view is valuable in trauma because it requires only body rotation \u2014 the injured arm does not need to be moved. This makes it ideal for patients with suspected fractures or dislocations who cannot tolerate arm manipulation. It can demonstrate anterior or posterior dislocation.",
+    "tags": [
+      "trauma positioning",
+      "shoulder",
+      "scapular Y-view"
+    ]
   }
 ]
