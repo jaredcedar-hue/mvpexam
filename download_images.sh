@@ -14,6 +14,9 @@
 set -e
 mkdir -p images
 
+# Wikimedia blocks requests without a proper User-Agent
+UA="ARRTExamMVP/1.0 (https://github.com/jaredcedar-hue/mvpexam; educational project) curl"
+
 # Helper: download from Wikimedia Commons using the API to get the real URL
 # Usage: wiki_dl "File:Example.jpg" "local_filename.jpg" [width]
 wiki_dl() {
@@ -23,7 +26,7 @@ wiki_dl() {
 
     # Use Wikimedia API to get the thumbnail URL at desired width
     local api_url="https://en.wikipedia.org/w/api.php?action=query&titles=${file_title}&prop=imageinfo&iiprop=url&iiurlwidth=${width}&format=json"
-    local img_url=$(curl -sL "$api_url" | python3 -c "
+    local img_url=$(curl -sL -A "$UA" "$api_url" | python3 -c "
 import sys, json
 data = json.load(sys.stdin)
 pages = data.get('query',{}).get('pages',{})
@@ -34,7 +37,7 @@ for p in pages.values():
 " 2>/dev/null)
 
     if [ -n "$img_url" ] && [ "$img_url" != "None" ]; then
-        curl -sL -o "images/$local_name" "$img_url"
+        curl -sL -A "$UA" -o "images/$local_name" "$img_url"
         local fsize=$(stat -f%z "images/$local_name" 2>/dev/null || stat -c%s "images/$local_name" 2>/dev/null)
         if [ "$fsize" -gt 5000 ]; then
             echo "  ✓ $local_name (${fsize} bytes)"
