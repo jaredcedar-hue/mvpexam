@@ -632,7 +632,7 @@ def main():
     valid = []
     missing = []
     for q in ALL_NEW_QUESTIONS:
-        if os.path.isfile(q["img"]) and os.path.getsize(q["img"]) > 100:
+        if os.path.isfile(q["img"]) and os.path.getsize(q["img"]) > 5000:
             valid.append(q)
         else:
             missing.append(q["img"])
