@@ -7,7 +7,7 @@
 #   chmod +x download_images.sh
 #   ./download_images.sh
 #
-# Uses the Wikimedia API to get current image URLs (immune to URL changes).
+# Uses the Wikimedia COMMONS API (not en.wikipedia) to get current image URLs.
 # Sources: Wikimedia Commons (public domain / CC licensed medical images)
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -17,15 +17,16 @@ mkdir -p images
 # Wikimedia blocks requests without a proper User-Agent
 UA="ARRTExamMVP/1.0 (https://github.com/jaredcedar-hue/mvpexam; educational project) curl"
 
-# Helper: download from Wikimedia Commons using the API to get the real URL
+# Helper: download from Wikimedia Commons using the COMMONS API to get the real URL
 # Usage: wiki_dl "File:Example.jpg" "local_filename.jpg" [width]
 wiki_dl() {
     local file_title="$1"
     local local_name="$2"
     local width="${3:-800}"
 
-    # Use Wikimedia API to get the thumbnail URL at desired width
-    local api_url="https://en.wikipedia.org/w/api.php?action=query&titles=${file_title}&prop=imageinfo&iiprop=url&iiurlwidth=${width}&format=json"
+    # IMPORTANT: Use commons.wikimedia.org (NOT en.wikipedia.org)
+    # Many medical images only exist on Commons, not on English Wikipedia
+    local api_url="https://commons.wikimedia.org/w/api.php?action=query&titles=${file_title}&prop=imageinfo&iiprop=url&iiurlwidth=${width}&format=json"
     local img_url=$(curl -sL -A "$UA" "$api_url" | python3 -c "
 import sys, json
 data = json.load(sys.stdin)
@@ -49,49 +50,49 @@ for p in pages.values():
 }
 
 echo "Downloading public domain medical images for ARRT exam questions..."
-echo "Using Wikimedia API for reliable URLs..."
+echo "Using Wikimedia Commons API for reliable URLs..."
 echo ""
 
 # ─── X-RAY EQUIPMENT & PHYSICS ───────────────────────────────────────────────
 echo "=== Equipment & Physics ==="
 wiki_dl "File:Roentgen-Roehre.svg" "xray_tube_diagram.png" 800
-wiki_dl "File:OEC_9800_Plus.jpg" "c_arm.jpg" 600
-wiki_dl "File:UPMCEast_CT.jpg" "ct_scanner.jpg" 800
+wiki_dl "File:Mobile_X-ray_machine.jpg" "c_arm.jpg" 600
+wiki_dl "File:Lachine_Hospital_CT_Scanner.jpg" "ct_scanner.jpg" 800
 wiki_dl "File:EM_Spectrum_Properties_edit.svg" "em_spectrum.png" 900
 
 echo ""
 echo "=== Chest Pathology ==="
 wiki_dl "File:Pneumothorax_CXR.jpg" "pneumothorax.jpg" 500
-wiki_dl "File:LargePleuralEffusion.jpg" "pleural_effusion.jpg" 500
+wiki_dl "File:Pleural_effusion.jpg" "pleural_effusion.jpg" 500
 wiki_dl "File:Pneumonia_x-ray.jpg" "pneumonia.jpg" 500
 
 echo ""
 echo "=== Fractures ==="
 wiki_dl "File:Colles_fracture.JPG" "colles_fracture.jpg" 400
-wiki_dl "File:Hip_fracture_-_trochanteric.jpg" "hip_fracture.jpg" 500
-wiki_dl "File:Scoliosis_patient_in_cheneau_brace_correcting_from_56_to_27_degrees.jpg" "scoliosis.jpg" 400
+wiki_dl "File:X-ray_of_a_comminuted_hip_fracture.jpg" "hip_fracture.jpg" 500
+wiki_dl "File:Scoliosis.jpg" "scoliosis.jpg" 400
 
 echo ""
 echo "=== Abdomen ==="
-wiki_dl "File:Small_bowel_obstruction.jpg" "bowel_obstruction.jpg" 500
+wiki_dl "File:Upright_X-ray_demonstrating_small_bowel_obstruction.jpg" "bowel_obstruction.jpg" 500
 
 echo ""
 echo "=== Radiation Safety ==="
-wiki_dl "File:Film_badge_dosimeter.jpg" "film_badge.jpg" 500
+wiki_dl "File:Fast_Neutron_Film_Badge,_extracted_from_A_simplified_film_dosimeter_for_fission_neutrons_(1958).jpg" "film_badge.jpg" 500
 wiki_dl "File:Radiation_warning_symbol.svg" "radiation_symbol.png" 600
 
 echo ""
 echo "=== Contrast Studies ==="
-wiki_dl "File:Barium_swallow.jpg" "barium_swallow.jpg" 400
+wiki_dl "File:Barium_swallow.png" "barium_swallow.jpg" 400
 wiki_dl "File:Cerebral_angiography,_arteria_vertebralis_sinister_injection.JPG" "angiogram.jpg" 500
 
 echo ""
 echo "=== Additional Anatomy ==="
-wiki_dl "File:Cervical_Xray_Lateral.jpg" "lateral_cspine.jpg" 400
-wiki_dl "File:Pelvis_normal_AP.jpg" "ap_pelvis.jpg" 500
-wiki_dl "File:Knee_lateral.jpg" "lateral_knee.jpg" 400
-wiki_dl "File:X-ray_of_normal_hand_by_dorridge_gp_-_john_osborne.jpg" "pa_hand.jpg" 400
-wiki_dl "File:Medical_X-Ray_imaging_ALP02_nevridge.jpg" "skull_pa.jpg" 400
+wiki_dl "File:X-ray_of_the_cervical_spine_of_a_20_year_old_male_-_lateral.jpg" "lateral_cspine.jpg" 400
+wiki_dl "File:Boy_pelvic_x-ray_pic.jpg" "ap_pelvis.jpg" 500
+wiki_dl "File:Radiograph_with_knee_angles.jpg" "lateral_knee.jpg" 400
+wiki_dl "File:Two_hands,_viewed_through_x-ray._Photoprint_from_radiograph_Wellcome_L0013210.jpg" "pa_hand.jpg" 500
+wiki_dl "File:Lateral_projectional_radiograph_scan_of_skull.jpg" "skull_pa.jpg" 400
 
 echo ""
 echo "═══════════════════════════════════════════════════════════════"
